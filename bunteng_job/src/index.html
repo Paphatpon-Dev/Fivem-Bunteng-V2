@@ -1,72 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SCSS Style</title>
-    <link rel="stylesheet" href="./css/main.css" />
-    <style>
-      #app {
-        background-image: url("./iPTAdYV.png");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="app">
-      <div class="container relative">
-        <div class="wrapper absolute">
-          <div class="job flex flex-col">
-            <div class="box-1 flex">
-              <div class="button flex justify-center items-center">
-                <div class="pull flex justify-center items-center">K</div>
-                <div>เพื่อเบิกรถ</div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SCSS Style</title>
+  <link rel="stylesheet" href="./css/main.css" />
+  <style>
+    #app {
+      background-image: url("./iPTAdYV.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <div class="container relative">
+      <div class="wrapper absolute">
+        <div class="job flex flex-col">
+          <div class="box-1 flex">
+            <div class="button flex justify-center items-center">
+              <div class="pull flex justify-center items-center">K</div>
+              <div>เพื่อเบิกรถ</div>
+            </div>
+            <div class="button flex justify-center items-center">
+              <div class="pull flex justify-center items-center">L</div>
+              <div>เพื่อเปิดท้าย</div>
+            </div>
+          </div>
+          <div class="box-2 flex flex-col">
+            <div class="header flex justify-between items-center">
+              <div>ฟาร์มอัตโนมัติ</div>
+              <div class="btn">กำลังทำงาน</div>
+            </div>
+            <div class="body flex items-center">
+              <div class="circle-progress autofarm-circle" style="--percent: 10">
+                <span class="value flex justify-center items-center"><img src="./img/item.png" alt=""
+                    class="icon" /></span>
               </div>
-              <div class="button flex justify-center items-center">
-                <div class="pull flex justify-center items-center">L</div>
-                <div>เพื่อเปิดท้าย</div>
+              <div class="text-farm flex flex-col">
+                <div class="img flex">
+                  <img src="./img/cog.png" alt="">
+                  <div>1/40</div>
+                </div>
+                <div class="font-farm">ฟาร์มข้าว</div>
               </div>
             </div>
-            <div class="box-2 flex flex-col">
-              <div class="header flex justify-between items-center">
-                <div>ฟาร์มอัตโนมัติ</div>
-                <div class="btn">กำลังทำงาน</div>
+            <div class="footer flex justify-center items-center">
+              <div class="pull flex justify-center items-center">E</div>
+              <div>เพื่อยกเลิก</div>
+            </div>
+          </div>
+          <div class="box-3 flex justify-between">
+            <div class="bonus flex">
+              <div class="border-bonus flex justify-center items-center">
+                <img src="./img/bonus.png" alt="">
               </div>
-              <div class="body flex items-center">
-                <div
-                  class="circle-progress autofarm-circle"
-                  style="--percent: 10"
-                >
-                  <span class="value flex justify-center items-center"
-                    ><img src="./img/item.png" alt="" class="icon"
-                  /></span>
-                </div>
-                <div class="text-farm flex flex-col">
-                  <div class="img flex">
-                    <img src="./img/cog.png" alt="">
-                    <div>1/40</div>
-                  </div>
-                  <div class="font-farm">ฟาร์มข้าว</div>
-                </div>
-              </div>
-              <div class="footer flex justify-center items-center">
-                <div class="pull flex justify-center items-center">E</div>
-                <div>เพื่อยกเลิก</div>
+              <div class="text-bonus">
+                <div>เหรียญสิงโต</div>
+                <div>จำนวน 0</div>
               </div>
             </div>
-            <div class="box-3 flex justify-between">
-              <div class="bonus flex">
-                <div class="border-bonus flex justify-center items-center">
-                  <img src="./img/bonus.png" alt="">
-                </div>
-                <div class="text-bonus">
-                  <div>เหรียญสิงโต</div>
-                  <div>จำนวน 0</div>
-                </div>
-              </div>
-              <div class="icon-bonus flex flex-col justify-center items-center">
+            <div class="icon-bonus">
+              <div class="flex flex-col items-center">
                 <img src="./img/shield.png" alt="" class="w-full">
                 <div>โบนัส</div>
               </div>
@@ -75,6 +74,8 @@
         </div>
       </div>
     </div>
-    <script src="./js/script.js"></script>
-  </body>
+  </div>
+  <script src="./js/script.js"></script>
+</body>
+
 </html>
