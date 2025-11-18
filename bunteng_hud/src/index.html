@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SCSS Style</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <style>
+      #app {
+        background-image: url("./iPTAdYV.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <div class="container relative">
+        <div class="wrapper absolute">
+          <div class="hud w-full h-full">
+            <!-- datetime-id -->
+            <div class="flex datetime absolute">
+              <div class="bg-time microphone flex">
+                <div class="flex items-center justify-center">
+                  <img
+                    src="./img/microphone.png"
+                    alt=""
+                    class="icon-micro"
+                  />
+                </div>
+                <div class="flex dots justify-center items-center">
+                  <div class="micro" data-level="1"></div>
+                  <div class="micro" data-level="2"></div>
+                  <div class="micro" data-level="3"></div>
+                </div>
+              </div>
+              <div class="bg-time time flex items-center justify-center">
+                <div class="pulsing"></div>
+                <div class="text-date">20/08</div>
+                <div class="flex font-size items-center justify-center">
+                  <div class="text-time">TIME:</div>
+                  <div class="text-clock">20:32</div>
+                </div>
+              </div>
+              <div class="bg-time uid flex items-center justify-center">
+                <div class="text-uid">UID:</div>
+                <div>2000</div>
+              </div>
+            </div>
+            <!-- stamina-hp -->
+            <div class="status-hp absolute">
+              <!-- stamina circle-->
+              <div class="circle-progress stamina-circle" style="--percent: 25">
+                <span class="value flex justify-center items-center"
+                  ><img src="./img/stamina.png" alt="" class="icon"
+                /></span>
+              </div>
+              <!-- hp-amor -->
+              <div class="flex flex-col bg-hp relative">
+                <!-- HP circle-->
+                <div class="flex hp items-center absolute">
+                  <img src="./img/hp.svg" alt="" />
+                  <div class="progress">
+                    <div
+                      class="progress-value blood-circle"
+                      style="--percent: 50%"
+                    ></div>
+                  </div>
+                </div>
+                <!-- AMOR circle-->
+                <div class="flex amor items-center absolute">
+                  <img src="./img/amor.svg" alt="" />
+                  <div class="progress">
+                    <div
+                      class="progress-value amor-circle"
+                      style="--percent: 60%"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- food-oxigen -->
+            <div class="status-food flex absolute">
+              <!-- food circle -->
+              <div class="bg relative">
+                <img
+                  src="./img/circle-bg.png"
+                  alt=""
+                  class="w-full absolute"
+                />
+                <div class="w-circle absolute">
+                  <img
+                    src="./img/circle-success.png"
+                    alt=""
+                    class="food-w"
+                    style="--percent: 100%"
+                  />
+                </div>
+                <div
+                  class="flex icon-food w-full h-full absolute justify-center items-center"
+                >
+                  <img src="./img/food.svg" alt="" class="" />
+                </div>
+                <div id="text-food" class="text-status absolute flex justify-center">100%</div>
+              </div>
+              <!-- oxigen circle -->
+              <div class="bg relative">
+                <img
+                  src="./img/circle-bg.png"
+                  alt=""
+                  class="w-full absolute"
+                />
+                 <div class="w-circle absolute">
+                  <img
+                    src="./img/circle-success.png"
+                    alt=""
+                    class="oxigen-w"
+                    style="--percent: 100%"
+                  />
+                </div>
+                <div
+                  class="flex icon-oxigen w-full h-full absolute justify-center items-center"
+                >
+                  <img src="./img/oxigen.svg" alt="" class="" />
+                </div>
+                <div id="text-oxigen" class="text-status  absolute flex justify-center">100%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
