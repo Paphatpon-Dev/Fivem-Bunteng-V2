@@ -1,0 +1,22 @@
+{
+  "name": "SCSS Style",
+  "version": "1.0.0",
+  "private": true,
+  "author": "",
+  "main": "index.js",
+  "scripts": {
+    "build:scss": "sass --no-source-map src/styles:dist/css",
+    "build:html": "copy src\\index.html dist\\index.html",
+    "build": "npm run build:scss && npm run build:html",
+    "watch:scss": "sass --no-source-map --watch src/styles:dist/css",
+    "watch:html": "chokidar \"src/index.html\" -c \"copy src\\index.html dist\\index.html\"",
+    "serve": "live-server dist --no-cache --watch=dist",
+    "dev": "concurrently \"npm run watch:scss\" \"npm run watch:html\" \"npm run serve\""
+  },
+  "devDependencies": {
+    "chokidar-cli": "^3.0.0",
+    "concurrently": "^9.2.1",
+    "live-server": "^1.2.2",
+    "sass": "^1.94.0"
+  }
+}

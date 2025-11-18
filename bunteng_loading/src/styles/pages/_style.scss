@@ -1,0 +1,35 @@
+.container {
+    width: 100%;
+    height: 100%;
+
+    .wrapper {
+        bottom: calc(200*var(--px));
+        left: 50%;
+        transform: translateX(-50%);
+        width: calc(261*var(--px));
+        height: calc(25*var(--px));
+        .font-load {
+            gap:  calc(5*var(--px));
+            font-size: calc(10*var(--px));
+        }
+        .loading {
+            bottom: 0;
+            .progress {
+                background: var(--color-background-90);
+                justify-content: flex-start;
+                border-radius: 100px;
+                align-items: center;
+                position: relative;
+                height: calc(9*var(--px));
+                width: calc(261*var(--px));
+
+                .progress-value {
+                    border-radius: calc(133*var(--px));
+                    background: var(--color-primary);
+                    height: calc(9*var(--px));
+                    width: var(--percent);
+                }
+            }
+        }
+    }
+}
