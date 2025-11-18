@@ -1,9 +1,158 @@
 .container {
     width: 100%;
     height: 100%;
+
     .wrapper {
         bottom: 0;
-        width: calc(517*var(--px));
-        height: calc(85*var(--px));
+        width: calc(320*var(--px));
+        height: calc(260*var(--px));
+
+        .job {
+            gap: calc(5*var(--px));
+
+            .box-2,
+            .box-3 {
+                width: 100%;
+                background-color: var(--color-background-90);
+                border-radius: calc(8*var(--px));
+                color: #fff;
+            }
+
+            .box-1 {
+                width: 100%;
+                height: calc(30*var(--px));
+                gap: calc(10*var(--px));
+
+                .button {
+                    gap: calc(20*var(--px));
+                    width: 100%;
+                    background-color: var(--color-background-90);
+                    border-radius: calc(50*var(--px));
+                    font-size: calc(14*var(--px));
+
+                    .pull {
+                        width: calc(20*var(--px));
+                        height: calc(20*var(--px));
+                        box-shadow: 0 0 calc(5*var(--px)) var(--color-secondary2);
+                        border-radius: calc(50*var(--px));
+                        border-radius: calc(50*var(--px));
+                        background-color: var(--color-secondary2);
+                    }
+                }
+
+            }
+
+            .box-2 {
+                height: calc(150*var(--px));
+                padding: calc(20*var(--px));
+                gap: calc(5*var(--px));
+
+                .header {
+                    font-size: calc(16*var(--px));
+
+                    .btn {
+                        padding: calc(5*var(--px)) calc(10*var(--px));
+                        border-radius: calc(50*var(--px));
+                        background-color: var(--color-secondary2);
+                    }
+                }
+
+                .body {
+                    gap: calc(20*var(--px));
+
+                    .circle-progress {
+                        width: calc(65*var(--px));
+                        height: calc(65*var(--px));
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: relative;
+                        z-index: 2;
+                        background: conic-gradient(var(--color-primary) calc(var(--percent) * 1%), var(--color-background1) 0);
+
+                        .value {
+                            position: absolute;
+
+                            .icon {
+                                width: calc(35*var(--px));
+                                height: auto;
+                            }
+                        }
+                    }
+
+                    .circle-progress::before {
+                        content: "";
+                        width: calc(60*var(--px));
+                        height: calc(60*var(--px));
+                        background: var(--color-border-1);
+                        border-radius: 50%;
+                        position: absolute;
+                    }
+
+                    .text-farm {
+                        font-size: calc(14*var(--px));
+                        ;
+
+                        .img {
+                            gap: calc(5*var(--px));
+
+                            img {
+                                width: calc(15*var(--px));
+                                height: calc(15*var(--px));
+                            }
+                        }
+                    }
+                }
+
+                .footer {
+                    gap: calc(10*var(--px));
+                    font-size: calc(16*var(--px));
+
+                    .pull {
+                        width: calc(20*var(--px));
+                        height: calc(20*var(--px));
+                        box-shadow: 0 0 calc(5*var(--px)) var(--color-secondary2);
+                        border-radius: calc(50*var(--px));
+                        border-radius: calc(50*var(--px));
+                        background-color: var(--color-secondary2);
+                    }
+                }
+            }
+
+            .box-3 {
+                height: calc(70*var(--px));
+                padding: calc(10*var(--px));
+
+                .bonus {
+                    gap: calc(15*var(--px));
+                    ;
+
+                    .border-bonus {
+                        width: calc(50*var(--px));
+                        height: calc(50*var(--px));
+                        background: var(--color-background2);
+                        padding: calc(10*var(--px));
+                        border: 1px solid var(--color-border-50);
+                        border-radius: calc(10*var(--px));
+                        ;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+                    .text-bonus {
+                        font-size: calc(14*var(--px));
+                    }
+
+                }
+
+                .icon-bonus {
+                    font-size: calc(16*var(--px));
+                }
+            }
+        }
     }
 }
