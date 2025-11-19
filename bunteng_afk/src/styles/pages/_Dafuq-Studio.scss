@@ -1,0 +1,117 @@
+// px / 0.75 
+// ===============================
+// Position Utilities
+// ===============================
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.sticky {
+  position: sticky;
+}
+
+
+// ===============================
+// Display Utilities
+// ===============================
+.flex {
+  display: flex;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.hidden {
+  display: none;
+}
+
+
+// ===============================
+// Flexbox Utilities
+// ===============================
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+
+// ===============================
+// Size Utilities
+// ===============================
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+
+// ===============================
+// Text Align
+// ===============================
+.text-left   { text-align: left; }
+.text-center { text-align: center; }
+.text-right  { text-align: right; }
+
+
+// ===============================
+// Text Transform
+// ===============================
+.uppercase   { text-transform: uppercase; }
+.lowercase   { text-transform: lowercase; }
+.capitalize  { text-transform: capitalize; }
+
+
+// ===============================
+// Text Color
+// ===============================
+.text-white { color: #fff; }
+.text-black { color: #000; }
+.text-gray  { color: #999; }
+.text-red   { color: #e74c3c; }
+.text-green { color: #2ecc71; }
+.text-blue  { color: #3498db; }
+
+// ===============================
+// Border Width
+// ===============================
+.border-test {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #e74c3c;
+}
+
+

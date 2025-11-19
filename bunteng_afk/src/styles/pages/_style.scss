@@ -1,0 +1,77 @@
+.container {
+    width: 100%;
+    height: 100%;
+
+    .wrapper {
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: calc(350*var(--px));
+        height: calc(150*var(--px));
+        .box {
+            width: 100%;
+            background-color: var(--color-background-90);
+            border-radius: calc(18*var(--px));
+            color: #fff;
+            height: calc(150*var(--px));
+            padding: calc(20*var(--px));
+            gap: calc(15*var(--px));
+            .header {
+                font-size: calc(16*var(--px));
+
+                .btn {
+                    padding: calc(5*var(--px)) calc(10*var(--px));
+                    border-radius: calc(50*var(--px));
+                    background-color: var(--color-secondary2);
+                }
+            }
+            .body {
+                gap: calc(20*var(--px));
+
+                .circle-progress {
+                    width: calc(65*var(--px));
+                    height: calc(65*var(--px));
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    z-index: 2;
+                    background: conic-gradient(var(--color-primary) calc(var(--percent) * 1%), var(--color-background1) 0);
+
+                    .value {
+                        position: absolute;
+
+                        .icon {
+                            width: calc(35*var(--px));
+                            height: auto;
+                        }
+                    }
+                }
+
+                .circle-progress::before {
+                    content: "";
+                    width: calc(60*var(--px));
+                    height: calc(60*var(--px));
+                    background: var(--color-border-1);
+                    border-radius: 50%;
+                    position: absolute;
+                }
+
+                .text-farm {
+                    font-size: calc(14*var(--px));
+                    ;
+
+                    .img {
+                        gap: calc(5*var(--px));
+
+                        img {
+                            width: calc(15*var(--px));
+                            height: calc(15*var(--px));
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

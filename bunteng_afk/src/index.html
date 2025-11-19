@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SCSS Style</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <style>
+      #app {
+        background-image: url("./iPTAdYV.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <div class="container relative">
+        <div class="wrapper absolute">
+           <div class="box flex flex-col">
+            <div class="header flex justify-between items-center">
+              <div>เขตปล่อยตัว</div>
+              <div class="btn">กำลังปล่อยตัว</div>
+            </div>
+            <div class="body flex items-center">
+              <div class="circle-progress afk-circle" style="--percent: 0">
+                <span class="value flex justify-center items-center"><img src="./img/bonus.png" alt=""
+                    class="icon" /></span>
+              </div>
+              <div class="text-farm flex flex-col">
+                <div class="img flex">
+                  <img src="./img/cog.png" alt="">
+                  <div>140</div>
+                </div>
+                <div class="font-farm">ฟาร์ม เหรียญ AFK</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
