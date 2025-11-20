@@ -138,6 +138,12 @@ body {
 .container .wrapper .radio .body .list .left {
   gap: calc(10 * var(--px));
 }
+.container .wrapper .radio .body .list .left .text-notwarp {
+  width: calc(200 * var(--px));
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 .container .wrapper .radio .body .list .left .pulsing {
   width: calc(10 * var(--px));
   height: calc(10 * var(--px));

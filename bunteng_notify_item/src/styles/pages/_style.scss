@@ -1,0 +1,77 @@
+.container {
+    width: 100%;
+    height: 100%;
+
+    .wrapper {
+        bottom: 0;
+        width: calc(220*var(--px));
+
+        .notify-item {
+            gap: calc(5*var(--px));
+
+            .item {
+                width: 100%;
+                height: calc(85*var(--px));
+                border-radius: calc(10*var(--px));
+                background: var(--color-background-90);
+                padding: calc(10*var(--px));
+                img {
+                    width: calc(35*var(--px));
+                }
+                .item-name {
+                    font-size: calc(14*var(--px));
+
+                    .item-name-h {
+                        color: var(--color-text-secondary);
+                    }
+
+                    .notify-box {
+                        gap: calc(8*var(--px));
+                        border-radius: calc(14*var(--px));
+                        font-size: calc(13*var(--px));
+
+                        .pulsing-add {
+                            width: calc(10*var(--px));
+                            height: calc(10*var(--px));
+                            aspect-ratio: 1;
+                            border-radius: 50%;
+                            background: var(--color-green);
+                            box-shadow: 0 0 calc(10*var(--px)) 0 var(--color-green);
+                        }
+
+                        .pulsing-remove {
+                            width: calc(10*var(--px));
+                            height: calc(10*var(--px));
+                            aspect-ratio: 1;
+                            border-radius: 50%;
+                            background: var(--color-red);
+                            box-shadow: 0 0 calc(10*var(--px)) 0 var(--color-red);
+                        }
+                    }
+                    .notify-add {
+                        border: 1px solid var(--color-green);
+                    }
+                    .notify-remove {
+                        border: 1px solid var(--color-red);
+                    }
+                }
+
+                .add-img {
+                    width: calc(60*var(--px));
+                    height: calc(60*var(--px));
+                    border-radius: 100%;
+                    border: 1px solid var(--color-green);
+                    box-shadow: 0 0 calc(10*var(--px)) 0 var(--color-green);
+                }
+
+                .remove-img {
+                    width: calc(60*var(--px));
+                    height: calc(60*var(--px));
+                    border-radius: 100%;
+                    border: 1px solid var(--color-red);
+                    box-shadow: 0 0 calc(10*var(--px)) 0 var(--color-red);
+                }
+            }
+        }
+    }
+}

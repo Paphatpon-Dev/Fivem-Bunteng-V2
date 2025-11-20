@@ -64,6 +64,13 @@
                     .left {
                         gap: calc(10*var(--px));
 
+                        .text-notwarp {
+                            width: calc(200*var(--px));
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                        }
+
                         .pulsing {
                             width: calc(10*var(--px));
                             height: calc(10*var(--px));
