@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+:root {
+    --scale: 1;
+    --font-family: "Chakra Petch", sans-serif;
+    --transitionFactor: 1;
+
+    /* Color */
+    --color-primary: #FFB20D; 
+    --color-primary75: rgb(255, 178, 13, 0.75); 
+    --color-primary50: rgb(255, 178, 13, 0.50); 
+    --color-secondary: #FFCC00; 
+    --color-secondary2: #CD900E; 
+    --color-white: #FFF; 
+    --color-background: #363232;
+    --color-background1:rgb(0, 0, 0);
+    --color-background2: #433F3F;
+    --color-background3: #1E222B;
+    --color-background-90: rgb(30, 34, 43,0.90);
+    
+    --color-border-1: #524F48;
+    --color-border-50: rgb(82, 79, 72,0.50);
+    --color-border-2: rgb(82, 79, 72,0.30);
+
+    --color-red: #FF383C;
+    --color-green: #00FF22;
+    --color-yellow: #FFCC00;
+    --color-green2: #00C8B3;
+
+    --color-text-primary: rgba(255, 255, 255, 0.8);
+    --color-text-secondary: rgba(255, 255, 255, 0.6);
+
+    --radius: 10;
+    --base-screen-height: 1440;
+    --px: calc(1vh / var(--base-screen-height) * 100 * var(--scale));
+    --border-radius: calc(var(--radius) * var(--px));
+}
