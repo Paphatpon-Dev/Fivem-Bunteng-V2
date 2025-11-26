@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SCSS Style</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <style>
+      #app {
+        background-image: url("./iPTAdYV.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <div class="container relative">
+        <div class="wrapper absolute">
+          <div class="world flex flex-col items-center">
+            <div class="icon flex justify-center items-center">
+              <img src="./img/seting.png" alt="" />
+            </div>
+            <div class="text-world">World Selection</div>
+            <div class="text-header">เมนูสำหรับเลือก มิติที่คุณต้องการย้าย</div>
+            <div class="section flex flex-col">
+              <div class="dropdown">
+                <div class="dropdown-selected">Farm 1 [14]</div>
+
+                <ul class="dropdown-list">
+                  <li data-value="Farm 1 [14]">Farm 1 [14]</li>
+                  <li data-value="Farm 2 [14]">Farm 2 [14]</li>
+                  <li data-value="Farm 3 [14]">Farm 3 [14]</li>
+                  <li data-value="Farm 4 [14]">Farm 4 [14]</li>
+                </ul>
+              </div>
+            </div>
+            <div class="button flex">
+              <div>Close</div>
+              <div>Select</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
