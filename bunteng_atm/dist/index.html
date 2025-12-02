@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SCSS Style</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <style>
+      #app {
+        background-image: url("./iPTAdYV.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <div class="container relative">
+        <div class="wrapper absolute">
+          <div class="atm flex">
+            <div class="atm-left flex flex-col justify-between">
+              <div class="header flex justify-between">
+                <div class="">
+                  <h2>บัญชีธนาคาร</h2>
+                  <p>บริการ ฝาก-ถอน-โอน</p>
+                </div>
+                <div class="icon flex justify-center items-center">
+                  <img src="./img/bank.svg" alt="" />
+                </div>
+              </div>
+              <div class="title flex flex-col">
+                <div class="">
+                  <p>ชื่อบัญชี - Account name</p>
+                  <p>Sweetiiz Sueak</p>
+                </div>
+                <div class="not-number flex flex-col">
+                  <div class="flex">
+                    <div class="icon flex justify-center items-center">
+                      <img src="./img/view.png" alt="" />
+                    </div>
+                    <div>ยอดเงินในบัญชี</div>
+                  </div>
+                  <p>************</p>
+                </div>
+              </div>
+              <div class="footer">
+                <h4>2,017,300</h4>
+                <p>เงินสด - Cash Balance</p>
+              </div>
+            </div>
+            <div class="atm-right flex flex-col justify-between">
+              <div class="header flex justify-center">
+                <div class="box">
+                  <a href="#" class="deposit"
+                    ><img src="./img/deposit.png" alt=""
+                  /></a>
+                  <p>ฝากเงิน</p>
+                </div>
+                <div class="box">
+                  <a href="#" class="withdraw"
+                    ><img src="./img/withdraw.png" alt=""
+                  /></a>
+                  <p>ถอนเงิน</p>
+                </div>
+                <div class="box">
+                  <a href="#" class="transfer"
+                    ><img src="./img/transfer.png" alt=""
+                  /></a>
+                  <p>โอนเงิน</p>
+                </div>
+              </div>
+              <div class="body">
+                <div class="money">
+                  <div class="deposit">
+                    <label for="">จำนวนเงิน</label>
+                    <section class="relative">
+                      <input type="text" placeholder="จำนวน" />
+                      <section
+                        class="icon flex justify-center items-center absolute"
+                      >
+                        <img src="./img/money.png" alt="" />
+                      </section>
+                    </section>
+                    <section class="money-count">
+                      <a href="">1,000</a>
+                      <a href="">5,000</a>
+                      <a href="">10,000</a>
+                      <a href="">100,000</a>
+                    </section>
+                  </div>
+                  <div class="withdraw">
+                    <label for="">จำนวนเงิน</label>
+                    <section class="relative">
+                      <input type="text" placeholder="จำนวน" />
+                      <section
+                        class="icon flex justify-center items-center absolute"
+                      >
+                        <img src="./img/money.png" alt="" />
+                      </section>
+                    </section>
+                    <section class="money-count">
+                      <a href="">1,000</a>
+                      <a href="">5,000</a>
+                      <a href="">10,000</a>
+                      <a href="">100,000</a>
+                    </section>
+                  </div>
+                  <div class="transfer">
+                    <label for="">จำนวนเงิน</label>
+                    <section class="transfer-box flex">
+                      <section class="relative">
+                        <input type="text" placeholder="จำนวน" />
+                        <section
+                          class="icon flex justify-center items-center absolute"
+                        >
+                          <img src="./img/money.png" alt="" />
+                        </section>
+                      </section>
+                      <section class="relative">
+                        <input type="text" placeholder="UID" />
+                        <section
+                          class="icon flex justify-center items-center absolute"
+                        >
+                          <img src="./img/people.png" alt="" />
+                        </section>
+                      </section>
+                    </section>
+                    <section class="money-count">
+                      <a href="">1,000</a>
+                      <a href="">5,000</a>
+                      <a href="">10,000</a>
+                      <a href="">100,000</a>
+                    </section>
+                  </div>
+                </div>
+              </div>
+              <div class="footer flex justify-between items-center">
+                <p>Bunteng Bank</p>
+                <div class="btn flex justify-center items-center">ฝากเงิน</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
