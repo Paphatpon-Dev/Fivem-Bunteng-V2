@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SCSS Style</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <style>
+      #app {
+        background-image: url("./iPTAdYV.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <div class="container relative">
+        <div class="wrapper absolute">
+          <div class="shop flex flex-col justify-between">
+            <div class="shop-header flex justify-between items-center">
+              <div class="shop-header-logo flex items-center">
+                <div class="icon-market">
+                  <img src="./img/market.png" alt="" />
+                </div>
+                <div>ร้านขายของเบ็ดเตล็ด</div>
+              </div>
+              <div class="shop-header-nav">
+                <ul class="flex">
+                  <li><a href="" class="active">ทั้งหมด</a></li>
+                  <li><a href="" class="">อุปกรณ์</a></li>
+                  <li><a href="">ทำงาน</a></li>
+                  <li><a href="">อาหาร</a></li>
+                  <li><a href="">อื่นๆ</a></li>
+                </ul>
+              </div>
+              <div class="shop-header-search flex items-center">
+                <input type="search" name="" id="" placeholder="ค้นหา" />
+                <img src="./img/search.png" class="absolute" alt="" />
+              </div>
+            </div>
+            <div class="shop-body">
+              <div class="shop-body-grid">
+                <div class="shop-body-grid-items box-view">
+                  <div class="item-name">โทรศัพท์</div>
+                  <div class="item-img">
+                    <img src="./img/phone.png" alt="item" />
+                  </div>
+                  <div class="item-parts">ราคา/หน่วย</div>
+                  <div class="item-price">
+                    <div class="icon">$</div>
+                    <div class="price">3,000.-</div>
+                  </div>
+                </div>
+                <div class="shop-body-grid-items box-view">
+                  <div class="item-name">กล่องซ่อม</div>
+                  <div class="item-img">
+                    <img src="./img/repair_kit.png" alt="item" />
+                  </div>
+                  <div class="item-parts">ราคา/หน่วย</div>
+                  <div class="item-price">
+                    <div class="icon">$</div>
+                    <div class="price">3,000.-</div>
+                  </div>
+                </div>
+                <div class="shop-body-grid-items box-none"></div>
+                <div class="shop-body-grid-items box-none"></div>
+                <div class="shop-body-grid-items box-none"></div>
+                <div class="shop-body-grid-items box-none"></div>
+                <div class="shop-body-grid-items box-none"></div>
+                <div class="shop-body-grid-items box-none"></div>
+                <div class="shop-body-grid-items box-none"></div>
+                <div class="shop-body-grid-items box-none"></div>
+                <div class="shop-body-grid-items box-none"></div>
+                <div class="shop-body-grid-items box-none"></div>
+                <div class="shop-body-grid-items box-none"></div>
+                <div class="shop-body-grid-items box-none"></div>
+                <div class="shop-body-grid-items box-none"></div>
+              </div>
+            </div>
+            <div class="shop-footer flex justify-between">
+              <div class="shop-footer-img">
+                <img src="./img/phone.png" alt="" />
+              </div>
+              <div class="shop-footer-detail">
+                <div class="shop-footer-detail-info flex">
+                  <div class="flex items-center">
+                    <img src="./img/mynaui--info-diamond.png" alt="" />
+                  </div>
+                  <p class="flex items-center">รายละเอียดสินค้า</p>
+                </div>
+                <div class="shop-footer-detail-name flex flex-col">
+                  <div class="flex justify-between">
+                    <div class="name">ชื่อไอเท็ม</div>
+                    <div class="parts">ราคา/หน่วย</div>
+                  </div>
+                  <div class="flex justify-between">
+                    <div class="item">โทรศัพท์</div>
+                    <div class="price">5,000.-</div>
+                  </div>
+                </div>
+              </div>
+              <div class="shop-footer-btn flex justify-center items-center">
+                <div class="btn">ซื้อสินค้า</div>
+              </div>
+            </div>
+          </div>
+          <div class="modle-shop absolute">
+            <div class="modle-shop-header">
+              <div class="icon"><img src="./img/webpage.png" alt="" /></div>
+              <p>ชำระเงิน</p>
+            </div>
+            <div class="modle-shop-body">
+              <div class="modle-shop-body-info flex">
+                <div class="item"><img src="./img/phone.png" alt="" /></div>
+                <div
+                  class="modle-shop-body-info-input flex flex-col justify-center"
+                >
+                  <div class="flex flex-col">
+                    <label for="">จำนวน</label>
+                    <div class="number-wrapper relative">
+                      <input type="text" value="1" class="absolute"/>
+                      <div class="puhs absolute"></div>
+                      <div class="btn-minus absolute">-</div>
+                      <div class="btn-plus absolute">+</div>
+                    </div>
+                  </div>
+                  <div class="flex flex-col">
+                    <label for="">ยอดชำระเงิน</label>
+                    <div class="number-wrapper relative">
+                      <input type="text" value="1,000" class="absolute">
+                      <div class="money absolute">$</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modle-shop-body-btn flex justify-between">
+                <p>ขั้นตอนการขำระเงิน</p>
+                <div class="btn flex">
+                  <a href="" class="active">เงินสด</a>
+                  <p>หรือ</p>
+                  <a href="">ธนาคาร</a>
+                </div>
+              </div>
+              <hr>
+            </div>
+            
+            <div class="modle-shop-footer flex justify-center">
+               <a href="" class="">ยกเลิก</a>
+               <a href="" class="active">ชำระเงิน</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
