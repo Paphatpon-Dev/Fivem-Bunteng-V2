@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SCSS Style</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <style>
+      #app {
+        background-image: url("./iPTAdYV.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        /* background: rgb(0, 0, 0,0.5); */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <div class="container relative">
+        <div class="wrapper absolute">
+          <div class="dead relative">
+            <div class="dead-img absolute">
+              <img src="./img/dead.png" alt="" />
+            </div>
+            <div class="dead-info flex flex-col absolute">
+              <div class="dead-info-header flex justify-center">
+                <p>YOU ARE</p>
+                <p>DEAD</p>
+              </div>
+              <div class="dead-info-body flex justify-center items-center">
+                <img src="./img/start.png" alt="" />
+                <div>01:20</div>
+                <img src="./img/start.png" alt="" />
+              </div>
+              <div class="box-progess flex flex-col items-center">
+                <div class="progess">
+                  <p>เหลือเวลาอีก 15.49 นาที</p>
+                  <div class="progress">
+                    <div
+                      class="progress-value blood-circle"
+                      style="--percent: 50%"
+                    ></div>
+                  </div>
+                  <div class="btn-box flex">
+                    <div class="btn">
+                      <div>X</div>
+                      <p>CLEAR BODY</p>
+                    </div>
+                    <div class="btn">
+                      <div>G</div>
+                      <p>SEND CASE TO MEDICAL</p>
+                    </div>
+                    <div class="btn">
+                      <div>R</div>
+                      <p>REQUEST TO TALK</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

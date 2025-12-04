@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SCSS Style</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <style>
+      #app {
+        background-image: url("./iPTAdYV.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <div class="container relative">
+        <div class="wrapper absolute">
+          <div class="repair flex flex-col">
+            <div class="flex items-center">
+              <div class="icon flex justify-center items-center">
+                <img src="./img/seting.png" alt="" />
+              </div>
+              <div>
+                <div class="text-repair">ยืนยันการทำรายการ</div>
+                <div class="text-info">เลือกรายการที่ท่านสนใจ</div>
+              </div>
+            </div>
+            <div class="section flex flex-col">
+              <div class="dropdown">
+                <div class="dropdown-selected">กรุณาเลือกเมนูที่ต้องการ</div>
+
+                <ul class="dropdown-list">
+                  <li class="flex" data-value="ซ่อมยานพาหนะ">
+                    <div class="push blacks"></div>
+                    <div>ซ่อมยานพาหนะ</div>
+                    <div class="push oragn flex justify-center items-center">$</div>
+                    <div>1000</div>
+                  </li>
+                  <li class="flex" data-value="ล้างยานพาหนะ">
+                    <div class="push blacks"></div>
+                    <div>ล้างยานพาหนะ</div>
+                    <div class="push oragn flex justify-center items-center">$</div>
+                    <div>1000</div>
+                  </li>
+                  <li class="flex" data-value="เคลือบยานพาหนะ">
+                    <div class="push blacks"></div>
+                    <div>เคลือบยานพาหนะ</div>
+                    <div class="push oragn flex justify-center items-center">$</div>
+                    <div>1000</div>
+                  </li>
+                  <li class="flex" data-value="ซ่อมและล้างยานพาหนะ">
+                    <div class="push blacks"></div>
+                    <div>ซ่อมและล้างยานพาหนะ</div>
+                    <div class="push oragn flex justify-center items-center">$</div>
+                    <div>1000</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="button flex">
+              <div>ยกเลิก</div>
+              <div>ยืนยัน</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
